@@ -12,14 +12,14 @@ export default function TextBlock({ placement, children }: { placement?: 'top-le
                         placement === 'top-right' ? '-top-3 right-1' :
                         placement === 'bottom-left' ? '-bottom-3 left-1' :
                         placement === 'bottom-right' ? '-bottom-3 right-1' :
-                        placement === 'left' ? '-left-3 top-1/2 transform -translate-y-1/2 rotate-90' :
-                        placement === 'right' ? '-right-3 top-1/2 transform -translate-y-1/2 -rotate-90' : '' }
+                        placement === 'left' ? '-left-3 top-2/3 transform -translate-y-1/2 rotate-90' :
+                        placement === 'right' ? '-right-3 top-2/3 transform -translate-y-1/2 -rotate-90' : '' }
                     `}
                 >
                     <Scissors size={15}/>
                 </div>
             )}            
-            <p>{ children }</p>
+            <p className="text-justify">{ children }</p>
         </div>
     );
 }

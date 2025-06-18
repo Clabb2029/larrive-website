@@ -1,10 +1,11 @@
-import Navbar from "@/components/navbar";
+import { PageLayout } from "@/components/PageLayout";
 
 export default function Home() {
     return (
-        <div className="min-h-screen bg-base-100">
-            <Navbar />
-            <div>Hello there!</div>
-        </div>
+        <PageLayout>
+            <div className="h-screen">
+                Hello there!
+            </div>
+        </PageLayout>
     );
 }
