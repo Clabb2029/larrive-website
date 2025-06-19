@@ -26,7 +26,7 @@ export default function Navbar() {
         <div className="sticky top-0">
             <nav className="relative px-4 py-2 flex justify-between items-center bg-primary text-base-300">
                 <Link href="/">
-                    <Image src="/logo.png" height={30} width={30} alt="Website logo" className="filter invert brightness-0"/>
+                    <Image src="/logo.png" height={30} width={30} alt="Logo du site" className="filter invert brightness-0"/>
                 </Link>
                 <Menu onClick={handleMenuClick} className="md:hidden cursor-pointer hover:text-base-100"/>
 
@@ -59,13 +59,13 @@ export default function Navbar() {
                 <nav
                     className={`
                         bg-primary text-base-100 fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm px-4 py-2 border-r overflow-y-auto
-                        transform transition-transform duration-300
+                        transform transition-transform duration-300 z-50
                         ${menuOpen ? "translate-x-0" : "-translate-x-full"}
                     `}
                 >
                     <div className="flex items-center">
                         <Link href="/" className="mr-auto">
-                            <Image src="/logo.png" height={30} width={30} alt="Website logo" className="filter invert brightness-0"/>
+                            <Image src="/logo.png" height={30} width={30} alt="Logo du site" className="filter invert brightness-0"/>
                         </Link>
                         <X onClick={() => setMenuOpen(false)} className="cursor-pointer"/>
                     </div>

@@ -5,9 +5,9 @@ export default function Footer() {
 
     return (
         <footer className="bg-base-content text-base-100 text-xs">
-            <div className="container px-6 py-4 mx-auto">
+            <div className="container px-6 py-2 mx-auto">
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 sm:gap-y-10">
-                    <Image src="/logo.png" height={60} width={60} alt="Website logo" className="col-span-1 filter invert brightness-0 mx-auto my-auto"/>
+                    <Image src="/logo.png" height={50} width={50} alt="Logo du site" className="col-span-1 filter invert brightness-0 mx-auto my-auto"/>
                     <div className="flex flex-col lg:flex-row items-stretch col-span-1 lg:col-span-4 w-fit lg:w-full mx-auto divide-y lg:divide-y-0 divide-base-100 lg:divide-x">
                         <div className="flex flex-row items-center lg:justify-center flex-1 lg:pe-8 py-2">
                             <MapPin size={30} className="me-3"/>
@@ -33,7 +33,7 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-            <p className="p-4 text-center">{new Date().getFullYear()}, Atelier Jean-Claude Larrivé. Tous droits réservés.</p>
+            <p className="pb-4 text-center">{new Date().getFullYear()}, Atelier Jean-Claude Larrivé. Tous droits réservés.</p>
         </footer>
     )
 }
