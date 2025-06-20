@@ -1,9 +1,8 @@
 import { Scissors } from "lucide-react";
 
-export default function TextBlock({ placement, children }: { placement?: 'top-left' | 'top-right' | 'bottom-left' | 'bottom-right' | 'right' | 'left', children?: React.ReactNode }) {
+export default function TextBlock({ placement, children, className }: { placement?: 'top-left' | 'top-right' | 'bottom-left' | 'bottom-right' | 'right' | 'left', children?: React.ReactNode, className?: string }) {
     return (
-        <div className="relative outline-1 outline-base-300 outline-dashed bg-base-200 m-4 p-4">
-
+        <div className={`relative outline-1 outline-base-300 outline-dashed bg-base-200 p-2 ${className}`}>
             { placement && (
                 <div
                     className={`
@@ -19,7 +18,7 @@ export default function TextBlock({ placement, children }: { placement?: 'top-le
                     <Scissors size={15}/>
                 </div>
             )}            
-            <p className="text-justify">{ children }</p>
+            <div className="text-justify">{ children }</div>
         </div>
     );
 }

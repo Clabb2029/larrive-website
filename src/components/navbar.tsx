@@ -23,7 +23,7 @@ export default function Navbar() {
     };
 
     return (
-        <div className="sticky top-0">
+        <div className="sticky top-0 z-50">
             <nav className="relative px-4 py-2 flex justify-between items-center bg-primary text-base-300">
                 <Link href="/">
                     <Image src="/logo.png" height={30} width={30} alt="Logo du site" className="filter invert brightness-0"/>

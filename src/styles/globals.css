@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&family=Zeyada&display=swap');
 
 @import "tailwindcss";
 @plugin "daisyui" {
@@ -47,6 +47,10 @@ body {
 
 .parisienne-regular {
     font-family: "Parisienne", cursive;
+}
+
+.zeyada-regular {
+    font-family: "Zeyada", cursive;
 }
 
 .primary-bold {

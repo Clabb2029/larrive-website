@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Cours() {
     return (
-        <PageLayout>
+        <PageLayout className="p-10">
             <div className="w-fit">
                 <h1 className="mb-4 text-4xl parisienne-regular text-primary">Mes cours</h1>
                 <div className="lg:flex w-full mx-auto mt-10">
