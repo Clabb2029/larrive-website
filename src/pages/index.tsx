@@ -10,7 +10,7 @@ export default function Home() {
     return (
         <PageLayout>
             <div className="w-full h-full my-9 overflow-hidden">
-                <TextBlock className="w-5/6 md:w-1/2 mx-auto z-10 shadow-2xl mt-1">
+                <TextBlock className="w-5/6 md:w-1/2 mx-auto z-10 shadow-2xl mt-1 p-2">
                     <h1 className="text-4xl parisienne-regular text-primary text-center">Jean Claude <span className="zeyada-regular">LARRIVÉ</span></h1>
                     <p className="text-sm text-center mt-2">Tapissier - Décorateur</p>
                 </TextBlock>
