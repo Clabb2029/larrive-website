@@ -14,6 +14,7 @@ export default function Home() {
                     <h1 className="text-4xl parisienne-regular text-primary text-center">Jean Claude <span className="zeyada-regular">LARRIVÉ</span></h1>
                     <p className="text-sm text-center mt-2">Tapissier - Décorateur</p>
                 </TextBlock>
+                {/* eslint-disable @next/next/no-img-element */}
                 <img src="/interieur.jpg" alt="Intérieur de l'atelier" className="w-full xs:h-auto md:h-130 object-cover relative -mt-10 transition-transform duration-300 hover:scale-105" />
                 <div className="md:flex md:w-9/10 xl:w-3/5 mx-auto mt-10 md:mt-20">
                     <div className="p-1 w-full">
