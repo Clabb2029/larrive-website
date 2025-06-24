@@ -1,5 +1,6 @@
 import { MapPin, Phone, Mail } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
 
@@ -33,7 +34,8 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-            <p className="pb-4 text-center">{new Date().getFullYear()}, Atelier Jean-Claude Larrivé. Tous droits réservés.</p>
+            <p className="text-center">{new Date().getFullYear()}, Atelier Jean-Claude Larrivé. Tous droits réservés.</p>
+            <p className="pb-4 text-center"><Link href="/mentions-legales" className="text-error hover:underline text-decoration">Mentions légales.</Link> <Link href="/cgu" className="text-error hover:underline text-decoration">CGU.</Link></p>
         </footer>
     )
 }

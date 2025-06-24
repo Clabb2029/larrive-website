@@ -63,7 +63,7 @@ export default function Contact() {
                                 <div>
                                     <h2 className="font-bold">ATELIER</h2>
                                     <a href={link} target="_blank" className="group">
-                                        <p className="text-xs"><MapPin className="inline h-[1em] w-[1em] me-1" />28 rue Haute-Perrière</p>
+                                        <p className="text-xs"><MapPin className="inline h-[1em] w-[1em] me-1" />26 rue Haute-Perrière</p>
                                         <p className="text-xs">89000 Auxerre<ExternalLink className="inline-block h-[1em] w-[1em] align-text-bottom opacity-0 group-hover:opacity-50 transition-opacity duration-200 ms-1" /></p>
                                     </a>
                                 </div>
