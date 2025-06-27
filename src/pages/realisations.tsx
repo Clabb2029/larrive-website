@@ -3,6 +3,14 @@ import { PageLayout } from "@/components/PageLayout";
 import TextBlock from "@/components/textBlock";
 import { useEffect } from "react";
 
+/* eslint-disable @typescript-eslint/no-explicit-any */
+declare global {
+    interface Window {
+        YT: any;
+        onYouTubeIframeAPIReady: () => void;
+    }
+}
+
 export default function Realisations() {
 
     const seats = [
@@ -133,7 +141,6 @@ export default function Realisations() {
     }
 
     useEffect(() => {
-        /* eslint-disable @typescript-eslint/no-explicit-any */
         const startTime = 42;
         const endTime = 55;
 
