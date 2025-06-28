@@ -1,5 +1,6 @@
 import ContactButton from "@/components/contactButton";
 import { PageLayout } from "@/components/PageLayout";
+import SEO from "@/components/SEO";
 import TextBlock from "@/components/textBlock";
 import { useEffect } from "react";
 
@@ -135,7 +136,7 @@ export default function Realisations() {
     const getOtherCreationsTextBlock = () => {
         return (
             <TextBlock placement="top-left" className="w-full sm:w-1/3 ms-auto p-4 text-xs lg:text-sm mb-10 sm:mb-0">
-                <p>Au-delà des sièges, je redonne aussi vie des pièces plus imposantes comme des canapés, banquettes, têtes et pieds de lit.</p>
+                <p>Au-delà des sièges, je redonne aussi vie à des pièces plus imposantes comme des canapés, banquettes, têtes et pieds de lit.</p>
             </TextBlock>
         )
     }
@@ -211,39 +212,46 @@ export default function Realisations() {
     }, []);
 
     return (
-        <PageLayout className="p-10">
-            <div className="w-full">
-                <h1 className="text-4xl parisienne-regular text-primary">Mes réalisations</h1>
-                <div className="relative w-full aspect-[2/1] hidden sm:block">
-                    {getSeatTextBlock()}
-                    {getSeatsImageList(true)}
-                </div>
-                <div className="block sm:hidden mt-10">
-                    {getSeatTextBlock()}
-                    <div className="w-full h-[150vw] relative">
-                        {getSeatsImageList(false)}
+        <>
+            <SEO
+                title="Réalisations | Jean-Claude Larrivé - Tapissier décorateur à Auxerre"
+                description="Découvrez les réalisations de Jean-Claude Larrivé : fauteuils retapissés, canapés, têtes de lit, banquettes et stores d’intérieur réalisés sur mesure à Auxerre."
+                keywords="réalisations, tapissier Auxerre, fauteuils retapissés, têtes de lit, canapés, stores sur mesure, décoration intérieure, installation, Jean-Claude Larrivé"
+            />
+            <PageLayout className="p-10">
+                <div className="w-full">
+                    <h1 className="text-4xl parisienne-regular text-primary">Mes réalisations</h1>
+                    <div className="relative w-full aspect-[2/1] hidden sm:block">
+                        {getSeatTextBlock()}
+                        {getSeatsImageList(true)}
                     </div>
-                </div>
-                <div className="relative w-full aspect-[2/1] xl:max-h-[70vh] mt-20 hidden sm:block">
-                    {getOtherCreationsTextBlock()}
-                    {getOtherCreationsImageList(true)}
-                </div>
-                <div className="block sm:hidden mt-10">
-                    {getOtherCreationsTextBlock()}
-                    <div className="w-full h-[90vw] relative">
-                        {getOtherCreationsImageList(false)}
+                    <div className="block sm:hidden mt-10">
+                        {getSeatTextBlock()}
+                        <div className="w-full h-[150vw] relative">
+                            {getSeatsImageList(false)}
+                        </div>
                     </div>
+                    <div className="relative w-full aspect-[2/1] xl:max-h-[70vh] mt-20 hidden sm:block">
+                        {getOtherCreationsTextBlock()}
+                        {getOtherCreationsImageList(true)}
+                    </div>
+                    <div className="block sm:hidden mt-10">
+                        {getOtherCreationsTextBlock()}
+                        <div className="w-full h-[90vw] relative">
+                            {getOtherCreationsImageList(false)}
+                        </div>
+                    </div>
+                    <div className="mt-20 grid grid-cols-1 md:grid-cols-3 md:gap-x-10">
+                        <TextBlock placement="right" className="w-fit h-fit text-xs lg:text-sm p-4 mb-10 md:my-auto">
+                            <p>J’interviens également dans la confection sur mesure et l’installation de rideaux, doubles-rideaux et différents types de stores d’intérieur : stores enrouleurs, bateaux, à lamelles verticales ou encore cloisons japonaises.</p>
+                            <p>Mon savoir-faire s’adresse aussi bien aux particuliers qu’aux professionnels, avec un souci constant de qualité et de finition.</p>
+                            <p>Chaque pièce est réalisée avec soin dans mon atelier, puis installée chez vous pour sublimer votre intérieur jusque dans les moindres détails.</p>
+                        </TextBlock>
+                        <div id="player" className="w-full aspect-video max-w-full col-span-2" />
+                    </div>
+                    <ContactButton buttonText="Demander un devis" className="mt-10 md:mt-20" />
                 </div>
-                <div className="mt-20 grid grid-cols-1 md:grid-cols-3 md:gap-x-10">
-                    <TextBlock placement="right" className="w-fit h-fit text-xs lg:text-sm p-4 mb-10 md:my-auto">
-                        <p>J’interviens également dans la confection sur mesure et l’installation de rideaux, doubles-rideaux et différents types de stores d’intérieur : stores enrouleurs, bateaux, à lamelles verticales ou encore cloisons japonaises.</p>
-                        <p>Mon savoir-faire s’adresse aussi bien aux particuliers qu’aux professionnels, avec un souci constant de qualité et de finition.</p>
-                        <p>Chaque pièce est réalisée avec soin dans mon atelier, puis installée chez vous pour sublimer votre intérieur jusque dans les moindres détails.</p>
-                    </TextBlock>
-                    <div id="player" className="w-full aspect-video max-w-full col-span-2" />
-                </div>
-                <ContactButton buttonText="Demander un devis" className="mt-10 md:mt-20" />
-            </div>
-        </PageLayout>
+            </PageLayout>
+        </>
     )
 }

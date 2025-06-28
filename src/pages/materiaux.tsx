@@ -1,4 +1,5 @@
 import { PageLayout } from "@/components/PageLayout";
+import SEO from "@/components/SEO";
 import TextBlock from "@/components/textBlock";
 
 export default function Materiaux() {
@@ -71,31 +72,38 @@ export default function Materiaux() {
     }
 
     return (
-        <PageLayout className="p-10">
-            <div className="w-full">
-                <h1 className="text-4xl parisienne-regular text-primary">Les matériaux utilisés</h1>
-                <div className="relative w-full h-[500px] lg:h-[550px] xl:h-[500px] mt-10 hidden sm:block">
-                    {getTextBlock()}
-                    {getImageList(true)}
-                </div>
-                <div className="block sm:hidden mt-10">
-                    {getTextBlock()}
-                    <div className="w-full h-[100vw] relative">
-                        {getImageList(false)}
+        <>
+            <SEO
+                title="Matériaux | Jean-Claude Larrivé - Tapissier décorateur à Auxerre"
+                description="Découvrez les matériaux utilisés : tissus durables avec certifications Green Line, H2OH, Pet friendly, rPET. Matériaux choisis pour leur qualité, confort et respect de l’environnement."
+                keywords="matériaux durables, tissus écologiques, Green Line, H2OH, Pet friendly, rPET, tissus recyclés, artisanat, motifs, uni Jean-Claude Larrivé"
+            />
+            <PageLayout className="p-10">
+                <div className="w-full">
+                    <h1 className="text-4xl parisienne-regular text-primary">Les matériaux utilisés</h1>
+                    <div className="relative w-full h-[500px] lg:h-[550px] xl:h-[500px] mt-10 hidden sm:block">
+                        {getTextBlock()}
+                        {getImageList(true)}
+                    </div>
+                    <div className="block sm:hidden mt-10">
+                        {getTextBlock()}
+                        <div className="w-full h-[100vw] relative">
+                            {getImageList(false)}
+                        </div>
+                    </div>
+                    <div className="z-5 card card-border border-base-300 bg-base-200 rounded-md shadow-2xl h-fit w-fit mx-auto mt-[1vw] sm:mt-0">
+                        <div className="card-body flex flex-row py-4 gap-4">
+                            {
+                                pictos.map((picto, index) => (
+                                    <div key={index} className="sm:tooltip sm:tooltip-primary inline-block mr-2" data-tip={picto.alt}>
+                                        <img src={`/pictos/${picto.src}`} alt={picto.alt} className="w-[12vh]" />
+                                    </div>
+                                ))
+                            }
+                        </div>
                     </div>
                 </div>
-                <div className="card card-border border-base-300 bg-base-200 rounded-md shadow-2xl h-fit w-fit mx-auto mt-[1vw] sm:mt-0">
-                    <div className="card-body flex flex-row py-4 gap-4">
-                        {
-                            pictos.map((picto, index) => (
-                                <div key={index} className="sm:tooltip sm:tooltip-primary inline-block mr-2" data-tip={picto.alt}>
-                                    <img src={`/pictos/${picto.src}`} alt={picto.alt} className="w-[12vh]" />
-                                </div>
-                            ))
-                        }
-                    </div>
-                </div>
-            </div>
-        </PageLayout>
+            </PageLayout>
+        </>
     )
 }

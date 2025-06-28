@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.atelier-larrive.fr
+
+# Sitemaps
+Sitemap: https://www.atelier-larrive.fr/sitemap.xml
