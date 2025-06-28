@@ -27,7 +27,7 @@ export default function Map() {
             <Marker position={position} icon={customDivIcon}>
                 <Tooltip direction="top" offset={[0, -20]} opacity={1} className='rounded-xl'>
                     <div className="text-center">
-                        <h2 className="text-sm m-0 font-bold">Jean Claude LARRIVÉ</h2>
+                        <h2 className="text-sm m-0 font-bold">Jean-Claude LARRIVÉ</h2>
                         <span className='mx-0'>26 rue Haute-Perrière, Auxerre (89000)</span>
                     </div>
                 </Tooltip>
