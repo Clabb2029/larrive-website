@@ -62,12 +62,16 @@ export default function Materiaux() {
         const style = isLargeScreen ? largeScreenStyle : smallScreenStyle;
         return materials.map((material, index) => (
             /* eslint-disable @next/next/no-img-element */
-            <img
-                key={index}
-                src={`/materiaux/${material.src}`}
-                alt={material.alt}
-                className={`absolute ${style[index].position} ${style[index].rotation} w-[35%] sm:w-[18%] lg:w-[18%] xl:w-[15%] object-cover border-3 border-primary shadow-lg transition-all duration-300`}
-            />
+            <figure key={index} className={`absolute ${largeScreenStyle[index].position} ${largeScreenStyle[index].rotation} w-[35%] sm:w-[18%] lg:w-[18%] xl:w-[15%] border-3 border-primary shadow-lg transition-all duration-300`}>
+                <img
+                    loading="lazy"
+                    decoding="async"
+                    src={`/materiaux/${material.src}`}
+                    alt={material.alt}
+                    className="object-cover w-full h-auto"
+                />
+                <figcaption className="sr-only">{material.alt}</figcaption>
+            </figure>
         ))
     }
 
@@ -75,34 +79,43 @@ export default function Materiaux() {
         <>
             <SEO
                 title="Matériaux | Jean-Claude Larrivé - Tapissier décorateur à Auxerre"
-                description="Découvrez les matériaux utilisés : tissus durables avec certifications Green Line, H2OH, Pet friendly, rPET. Matériaux choisis pour leur qualité, confort et respect de l’environnement."
-                keywords="matériaux durables, tissus écologiques, Green Line, H2OH, Pet friendly, rPET, tissus recyclés, artisanat, motifs, uni Jean-Claude Larrivé"
+                description="Découvrez les matériaux utilisés par Jean-Claude Larrivé, tapissier décorateur à Auxerre : tissus durables avec certifications Green Line, H2OH, Pet friendly, rPET. Matériaux choisis pour leur qualité, confort et respect de l’environnement."
+                keywords="matériaux durables, tissus écologiques, Green Line, H2OH, Pet friendly, rPET, tissus recyclés, artisanat, motifs, uni, tapissier, décorateur, Auxerre Jean-Claude Larrivé"
+                canonical="/materiaux"
             />
             <PageLayout className="p-10">
-                <div className="w-full">
-                    <h1 className="text-4xl parisienne-regular text-primary">Les matériaux utilisés</h1>
-                    <div className="relative w-full h-[500px] lg:h-[550px] xl:h-[500px] mt-10 hidden sm:block">
+                <main className="w-full">
+                    <header>
+                        <h1 className="text-4xl parisienne-regular text-primary">Les matériaux utilisés</h1>
+                    </header>
+                    <section className="relative w-full h-[500px] lg:h-[550px] xl:h-[500px] mt-10 hidden sm:block">
                         {getTextBlock()}
                         {getImageList(true)}
-                    </div>
-                    <div className="block sm:hidden mt-10">
+                    </section>
+                    <section className="block sm:hidden mt-10">
                         {getTextBlock()}
                         <div className="w-full h-[100vw] relative">
                             {getImageList(false)}
                         </div>
-                    </div>
-                    <div className="z-5 card card-border border-base-300 bg-base-200 rounded-md shadow-2xl h-fit w-fit mx-auto mt-[1vw] sm:mt-0">
+                    </section>
+                    <section className="z-5 card card-border border-base-300 bg-base-200 rounded-md shadow-2xl h-fit w-fit mx-auto mt-[1vw] sm:mt-0">
                         <div className="card-body flex flex-row py-4 gap-4">
                             {
                                 pictos.map((picto, index) => (
                                     <div key={index} className="sm:tooltip sm:tooltip-primary inline-block mr-2" data-tip={picto.alt}>
-                                        <img src={`/pictos/${picto.src}`} alt={picto.alt} className="w-[12vh]" />
+                                        <img
+                                            loading="lazy"
+                                            decoding="async"
+                                            src={`/pictos/${picto.src}`}
+                                            alt={picto.alt}
+                                            className="w-[12vh]"
+                                        />
                                     </div>
                                 ))
                             }
                         </div>
-                    </div>
-                </div>
+                    </section>
+                </main>
             </PageLayout>
         </>
     )

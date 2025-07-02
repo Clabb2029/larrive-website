@@ -69,12 +69,19 @@ export default function Realisations() {
         const style = isLargeScreen ? largeScreenSeatsStyle : smallScreenSeatsStyle;
         return seats.map((seat, index) => (
             /* eslint-disable @next/next/no-img-element */
-            <img
+            <figure
                 key={index}
-                src={`/creations/fauteuils/${seat.src}`}
-                alt={seat.alt}
-                className={`absolute ${style[index].position} ${style[index].rotation} w-[29%] sm:max-w-[14%] h-auto object-cover bg-base-100 border-3 border-primary shadow-lg transition-all duration-300`}
-            />
+                className={`absolute ${style[index].position} ${style[index].rotation} w-[29%] sm:max-w-[14%] h-auto bg-base-100 border-3 border-primary shadow-lg transition-all duration-300`}
+            >
+                <img
+                    loading="lazy"
+                    decoding="async"
+                    src={`/creations/fauteuils/${seat.src}`}
+                    alt={seat.alt}
+                    className="object-cover w-full h-auto"
+                />
+                <figcaption className="sr-only">{seat.alt}</figcaption>
+            </figure>
         ))
     }
 
@@ -82,7 +89,7 @@ export default function Realisations() {
         return (
             <TextBlock placement="top-right" className="w-full sm:w-1/3 p-4 text-xs sm:text-[0.6rem] md:text-xs lg:text-sm mt-10 mb-10 sm:mb-0">
                 {/* eslint-disable react/no-unescaped-entities */}
-                <p>Je restaure et répare tous types de sièges en mettant en valeur leur caractère, qu'il soit classique, contemporain ou plus atypique.</p>
+                <p>Je restaure et répare tous types de sièges en mettant en valeur leur caractère unique, qu'il soit classique, contemporain ou plus atypique.</p>
             </TextBlock>
         )
     }
@@ -124,12 +131,19 @@ export default function Realisations() {
         const style = isLargeScreen ? largeScreenOtherCreationsStyle : smallScreenOtherCreationsStyle;
         return otherCreations.map((creation, index) => (
             /* eslint-disable @next/next/no-img-element */
-            <img
+            <figure
                 key={index}
-                src={`/creations/autres/${creation.src}`}
-                alt={creation.alt}
-                className={`absolute ${style[index].position} ${style[index].rotation} w-[29%] sm:max-w-[16%] h-auto object-cover bg-base-100 border-3 border-primary shadow-lg transition-all duration-300`}
-            />
+                className={`absolute ${style[index].position} ${style[index].rotation} w-[29%] sm:max-w-[16%] h-auto bg-base-100 border-3 border-primary shadow-lg transition-all duration-300`}
+            >
+                <img
+                    loading="lazy"
+                    decoding="async"
+                    src={`/creations/autres/${creation.src}`}
+                    alt={creation.alt}
+                    className="object-cover w-full h-auto"
+                />
+                <figcaption className="sr-only">{creation.alt}</figcaption>
+            </figure>
         ))
     }
 
@@ -215,42 +229,45 @@ export default function Realisations() {
         <>
             <SEO
                 title="Réalisations | Jean-Claude Larrivé - Tapissier décorateur à Auxerre"
-                description="Découvrez les réalisations de Jean-Claude Larrivé : fauteuils retapissés, canapés, têtes de lit, banquettes et stores d’intérieur réalisés sur mesure à Auxerre."
-                keywords="réalisations, tapissier Auxerre, fauteuils retapissés, têtes de lit, canapés, stores sur mesure, décoration intérieure, installation, Jean-Claude Larrivé"
+                description="Découvrez les réalisations artisanales de Jean-Claude Larrivé, tapissier décorateur à Auxerre : restauration de fauteuils, création et réparation de canapés, têtes de lit sur mesure, banquettes et stores d’intérieur pour sublimer votre décoration."
+                keywords="réalisations, tapissier Auxerre, fauteuils retapissés, têtes de lit, canapés, stores sur mesure, décoration intérieure, installation, tapissier, décorateur, Auxerre, Jean-Claude Larrivé"
+                canonical="/realisations"
             />
             <PageLayout className="p-10">
-                <div className="w-full">
-                    <h1 className="text-4xl parisienne-regular text-primary">Mes réalisations</h1>
-                    <div className="relative w-full aspect-[2/1] hidden sm:block">
+                <main className="w-full">
+                    <header>
+                        <h1 className="text-4xl parisienne-regular text-primary">Mes réalisations</h1>
+                    </header>
+                    <section className="relative w-full aspect-[2/1] hidden sm:block">
                         {getSeatTextBlock()}
                         {getSeatsImageList(true)}
-                    </div>
-                    <div className="block sm:hidden mt-10">
+                    </section>
+                    <section className="block sm:hidden mt-10">
                         {getSeatTextBlock()}
                         <div className="w-full h-[150vw] relative">
                             {getSeatsImageList(false)}
                         </div>
-                    </div>
-                    <div className="relative w-full aspect-[2/1] xl:max-h-[70vh] mt-20 hidden sm:block">
+                    </section>
+                    <section className="relative w-full aspect-[2/1] xl:max-h-[70vh] mt-20 hidden sm:block">
                         {getOtherCreationsTextBlock()}
                         {getOtherCreationsImageList(true)}
-                    </div>
-                    <div className="block sm:hidden mt-10">
+                    </section>
+                    <section className="block sm:hidden mt-10">
                         {getOtherCreationsTextBlock()}
                         <div className="w-full h-[90vw] relative">
                             {getOtherCreationsImageList(false)}
                         </div>
-                    </div>
-                    <div className="mt-20 grid grid-cols-1 md:grid-cols-3 md:gap-x-10">
+                    </section>
+                    <section className="mt-20 grid grid-cols-1 md:grid-cols-3 md:gap-x-10">
                         <TextBlock placement="right" className="w-fit h-fit text-xs lg:text-sm p-4 mb-10 md:my-auto">
                             <p>J’interviens également dans la confection sur mesure et l’installation de rideaux, doubles-rideaux et différents types de stores d’intérieur : stores enrouleurs, bateaux, à lamelles verticales ou encore cloisons japonaises.</p>
                             <p>Mon savoir-faire s’adresse aussi bien aux particuliers qu’aux professionnels, avec un souci constant de qualité et de finition.</p>
                             <p>Chaque pièce est réalisée avec soin dans mon atelier, puis installée chez vous pour sublimer votre intérieur jusque dans les moindres détails.</p>
                         </TextBlock>
                         <div id="player" className="w-full aspect-video max-w-full col-span-2" />
-                    </div>
+                    </section>
                     <ContactButton buttonText="Demander un devis" className="mt-10 md:mt-20" />
-                </div>
+                </main>
             </PageLayout>
         </>
     )

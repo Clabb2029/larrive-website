@@ -8,7 +8,8 @@ export default function CGU() {
             <SEO
                 title="CGU | Jean-Claude Larrivé - Tapissier décorateur à Auxerre"
                 description="Consultez les conditions générales d’utilisation du site Jean-Claude Larrivé, tapissier décorateur à Auxerre. Informations sur l’accès, l’utilisation, la protection des données et les responsabilités."
-                keywords="CGU, conditions générales d’utilisation, mentions légales, données personnelles, site internet, tapissier Auxerre, Jean-Claude Larrivé, droits, responsabilités"
+                keywords="CGU, conditions générales d’utilisation, mentions légales, données personnelles, site internet, tapissier Auxerre, tapissier, décorateur, Auxerre, Jean-Claude Larrivé, droits, responsabilités"
+                canonical="/cgu"
             />
             <PageLayout className="p-10">
                 {/* eslint-disable react/no-unescaped-entities */}

@@ -16,31 +16,36 @@ export default function Home() {
                 keywords="tapissier, décorateur, Auxerre, fauteuils, sièges, tissus, réfection, artisanat, Jean-Claude Larrivé"
             />
             <PageLayout>
-                <div className="w-full h-full my-9 overflow-hidden">
+                <main className="w-full h-full my-9 overflow-hidden">
                     <TextBlock className="w-5/6 md:w-1/2 mx-auto z-10 shadow-2xl mt-1 p-2">
-                        <h1 className="text-4xl parisienne-regular text-primary text-center">Jean-Claude <span className="zeyada-regular">LARRIVÉ</span></h1>
-                        <p className="text-sm text-center mt-2">Tapissier - Décorateur</p>
+                        <header>
+                            <h1 className="text-center">
+                                <span className="text-4xl parisienne-regular text-primary me-3">Jean-Claude</span>
+                                <span className="text-4xl zeyada-regular text-primary">LARRIVÉ</span>
+                                <span className="block text-sm mt-2">Tapissier - Décorateur à Auxerre</span>
+                            </h1>
+                        </header>
                     </TextBlock>
                     {/* eslint-disable @next/next/no-img-element */}
-                    <img src="/interieur.jpg" alt="Intérieur de l'atelier" className="w-full xs:h-auto md:h-130 object-cover relative -mt-10 transition-transform duration-300 hover:scale-105" />
-                    <div className="md:flex md:w-9/10 xl:w-3/5 mx-auto mt-10 md:mt-20">
+                    <img src="/interieur.jpg" alt="Atelier de tapissier décorateur à Auxerre – Jean-Claude Larrivé" className="w-full xs:h-auto md:h-130 object-cover relative -mt-10 transition-transform duration-300 hover:scale-105" />
+                    <section className="md:flex md:w-9/10 xl:w-3/5 mx-auto mt-10 md:mt-20" aria-labelledby="introduction">
                         <div className="p-1 w-full">
                             <Map />
                         </div>
-                        <div className="z-1 flex flex-col justify-evenly">
-                            <div className="card static card-border border-base-300 bg-base-200 rounded-md shadow-2xl w-fit mx-1 md:-ms-15 md:-mt-8 lg:-ms-40 xl:-ms-15 h-fit mt-8">
+                        <article className="z-1 flex flex-col justify-evenly">
+                            <div className="card static card-border border-base-300 bg-base-200 rounded-md shadow-2xl w-fit mx-1 md:-ms-15 md:-mt-8 lg:-ms-40 xl:-ms-15 h-fit mt-8" id="introduction">
                                 <div className="card-body text-xs">
-                                    <span>Bienvenue chez moi, <span className="primary-bold">Jean-Claude, tapissier décorateur passionné.</span></span>
-                                    <span>Avec plus de <span className="primary-bold">35 ans d’expérience</span>, je mets tout mon savoir-faire <span className="primary-bold">traditionnel</span> au service de vos fauteuils, sièges, décors de fenêtres et tissus d’ameublement.</span>
-                                    <span>Chaque projet est pour moi l’occasion de perpétuer des <span className="primary-bold">gestes artisanaux</span> précis, et de choisir avec soin les matières pour <span className="primary-bold">redonner vie et caractère à votre intérieur.</span></span>
-                                    <span>Je vous accompagne personnellement, avec passion et attention, pour créer un résultat unique qui allie authenticité et élégance.</span>
-                                    <span>Retrouvez-moi à mon atelier au <span className="primary-bold">26 rue Haute-Perrière à Auxerre (89000)</span>, ou chaque semaine sur les marchés : le vendredi à <span className="primary-bold">Auxerre</span>, le samedi à <span className="primary-bold">Avallon</span>.</span>
+                                    <p>Bienvenue chez moi, <strong>Jean-Claude, tapissier décorateur passionné.</strong></p>
+                                    <p>Avec plus de <strong>35 ans d’expérience</strong>, je mets tout mon savoir-faire <strong>traditionnel</strong> au service de vos fauteuils, sièges, décors de fenêtres et tissus d’ameublement.</p>
+                                    <p>Chaque projet est pour moi l’occasion de perpétuer des <strong>gestes artisanaux</strong> précis, et de choisir avec soin les matières pour <strong>redonner vie et caractère à votre intérieur.</strong></p>
+                                    <p>Je vous accompagne personnellement, avec passion et attention, pour créer un résultat unique qui allie authenticité et élégance.</p>
+                                    <p>Retrouvez-moi à mon atelier au <strong>26 rue Haute-Perrière à Auxerre (89000)</strong>, ou chaque semaine sur les marchés : le vendredi à <strong>Auxerre</strong>, le samedi à <strong>Avallon</strong>.</p>
                                 </div>
                             </div>
                             <ContactButton buttonText="Contactez-moi !" className="mt-10" />
-                        </div>
-                    </div>
-                </div>
+                        </article>
+                    </section>
+                </main>
             </PageLayout>
         </>
     );
