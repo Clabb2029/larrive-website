@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { useRouter } from 'next/router'
 import { PageLayout } from '@/components/PageLayout'
 import TextBlock from '@/components/textBlock';
+import SEO from '@/components/SEO';
 
 export default function Custom404() {
     const router = useRouter();
@@ -15,10 +16,17 @@ export default function Custom404() {
     }, [router]);
 
     return (
-        <PageLayout>
-            <TextBlock placement="bottom-right" className="w-fit p-4 my-auto mx-auto">
-                <p>Page introuvable. Redirection vers l’accueil...</p>
-            </TextBlock>
-        </PageLayout>
+        <>
+            <SEO
+                title="Page non trouvée | Jean-Claude Larrivé - Tapissier décorateur à Auxerre"
+                description="Page non trouvée. Cette page n’existe pas ou a été déplacée. Vous allez être redirigé vers l’accueil du site Jean-Claude Larrivé, tapissier décorateur à Auxerre."
+                keywords="404, page non trouvée, erreur, redirection, tapissier Auxerre, Jean-Claude Larrivé, décoration intérieure, accueil"
+            />
+            <PageLayout>
+                <TextBlock placement="bottom-right" className="w-fit p-4 my-auto mx-auto">
+                    <p>Page introuvable. Redirection vers l’accueil...</p>
+                </TextBlock>
+            </PageLayout>
+        </>
     )
 }
