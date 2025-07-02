@@ -62,7 +62,7 @@ export default function Materiaux() {
         const style = isLargeScreen ? largeScreenStyle : smallScreenStyle;
         return materials.map((material, index) => (
             /* eslint-disable @next/next/no-img-element */
-            <figure key={index} className={`absolute ${largeScreenStyle[index].position} ${largeScreenStyle[index].rotation} w-[35%] sm:w-[18%] lg:w-[18%] xl:w-[15%] border-3 border-primary shadow-lg transition-all duration-300`}>
+            <figure key={index} className={`absolute ${style[index].position} ${style[index].rotation} w-[35%] sm:w-[18%] lg:w-[18%] xl:w-[15%] border-3 border-primary shadow-lg transition-all duration-300`}>
                 <img
                     loading="lazy"
                     decoding="async"
