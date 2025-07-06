@@ -29,7 +29,7 @@ export default function SEO({ title, description, keywords, canonical }: { title
                                 "alternateName": "Jean Claude Larrivé",
                                 "jobTitle": "Tapissier décorateur, tapissier d'ameublement",
                                 "image": "https://www.atelier-larrive.fr/interieur.jpg",
-                                "logo": "https://www.atelier-larrive.fr/logo.png",
+                                "logo": "https://www.atelier-larrive.fr/logo-schema.png",
                                 "telephone": "06 87 12 53 85",
                                 "address": {
                                     "@type": "PostalAddress",
@@ -87,7 +87,7 @@ export default function SEO({ title, description, keywords, canonical }: { title
                                     "postalCode": "89000",
                                     "addressCountry": "FR"
                                 },
-                                "logo": "https://www.atelier-larrive.fr/logo.png",
+                                "logo": "https://www.atelier-larrive.fr/logo-schema.png",
                                 "areaServed": [
                                     { "@type": "Place", "name": "Auxerre" },
                                     { "@type": "Place", "name": "Avallon" }
