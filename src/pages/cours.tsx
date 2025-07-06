@@ -7,9 +7,9 @@ export default function Cours() {
     return (
         <>
             <SEO
-                title="Cours | Jean-Claude Larrivé - Tapissier décorateur à Auxerre"
-                description="Jean-Claude Larrivé, tapissier décorateur à Auxerre, je propose des cours d’initiation à la tapisserie au sein de mon atelier. Apprenez les techniques traditionnelles avec patience et pédagogie, pour tous niveaux, en atelier convivial."
-                keywords="cours tapisserie, initiation tapisserie, atelier tapisserie Auxerre, tapissier, décorateur, Auxerre, formation tapisserie, Jean-Claude Larrivé"
+                title="Cours | Tapissier à Auxerre – Jean-Claude Larrivé (Jean Claude Larrivé)"
+                description="Tapissier décorateur à Auxerre, Jean-Claude Larrivé. Jean Claude Larrivé, je propose des cours d’initiation à la tapisserie au sein de mon atelier. Apprenez les techniques traditionnelles avec patience et pédagogie, pour tous niveaux, en atelier convivial."
+                keywords="cours tapisserie, initiation tapisserie, atelier tapisserie Auxerre, tapissier, décorateur, Auxerre, formation tapisserie, Jean-Claude Larrivé, Jean Claude Larrivé"
                 canonical="/cours"
             />
             <PageLayout className="p-10">

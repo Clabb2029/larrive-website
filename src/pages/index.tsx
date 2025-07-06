@@ -11,9 +11,9 @@ export default function Home() {
     return (
         <>
             <SEO
-                title="Jean-Claude Larrivé | Tapissier décorateur à Auxerre"
-                description="Jean-Claude Larrivé, tapissier décorateur à Auxerre. Plus de 35 ans d'expérience pour redonner vie à vos fauteuils, sièges et décors d'intérieur."
-                keywords="tapissier, décorateur, Auxerre, fauteuils, sièges, tissus, réfection, artisanat, Jean-Claude Larrivé"
+                title="Tapissier à Auxerre – Jean-Claude Larrivé (Jean Claude Larrivé)"
+                description="Tapissier décorateur à Auxerre, Jean-Claude Larrivé. Jean Claude Larrivé, tapissier décorateur à Auxerre, avec plus de 35 ans d'expérience, redonne vie à vos fauteuils, sièges et décors d'intérieur."
+                keywords="tapissier, décorateur, Auxerre, fauteuils, sièges, tissus, réfection, artisanat, Jean-Claude Larrivé, Jean Claude Larrivé"
             />
             <PageLayout>
                 <main className="w-full h-full my-9 overflow-hidden">
@@ -35,7 +35,7 @@ export default function Home() {
                         <article className="z-1 flex flex-col justify-evenly">
                             <div className="card static card-border border-base-300 bg-base-200 rounded-md shadow-2xl w-fit mx-1 md:-ms-15 md:-mt-8 lg:-ms-40 xl:-ms-15 h-fit mt-8" id="introduction">
                                 <div className="card-body text-xs">
-                                    <p>Bienvenue chez moi, <strong>Jean-Claude, tapissier décorateur passionné.</strong></p>
+                                    <p>Bienvenue chez moi, <strong>Jean-Claude, tapissier décorateur situé à Auxerre.</strong></p>
                                     <p>Avec plus de <strong>35 ans d’expérience</strong>, je mets tout mon savoir-faire <strong>traditionnel</strong> au service de vos fauteuils, sièges, décors de fenêtres et tissus d’ameublement.</p>
                                     <p>Chaque projet est pour moi l’occasion de perpétuer des <strong>gestes artisanaux</strong> précis, et de choisir avec soin les matières pour <strong>redonner vie et caractère à votre intérieur.</strong></p>
                                     <p>Je vous accompagne personnellement, avec passion et attention, pour créer un résultat unique qui allie authenticité et élégance.</p>

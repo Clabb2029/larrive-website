@@ -78,9 +78,9 @@ export default function Materiaux() {
     return (
         <>
             <SEO
-                title="Matériaux | Jean-Claude Larrivé - Tapissier décorateur à Auxerre"
-                description="Découvrez les matériaux utilisés par Jean-Claude Larrivé, tapissier décorateur à Auxerre : tissus durables avec certifications Green Line, H2OH, Pet friendly, rPET. Matériaux choisis pour leur qualité, confort et respect de l’environnement."
-                keywords="matériaux durables, tissus écologiques, Green Line, H2OH, Pet friendly, rPET, tissus recyclés, artisanat, motifs, uni, tapissier, décorateur, Auxerre Jean-Claude Larrivé"
+                title="Matériaux | Tapissier à Auxerre – Jean-Claude Larrivé (Jean Claude Larrivé)"
+                description="Tapissier décorateur à Auxerre, Jean-Claude Larrivé. Découvrez les matériaux utilisés par Jean Claude Larrivé, tapissier décorateur à Auxerre : tissus durables avec certifications Green Line, H2OH, Pet friendly, rPET. Matériaux choisis pour leur qualité, confort et respect de l’environnement."
+                keywords="matériaux durables, tissus écologiques, Green Line, H2OH, Pet friendly, rPET, tissus recyclés, artisanat, motifs, uni, tapissier, décorateur, Auxerre, Jean-Claude Larrivé, Jean Claude Larrivés"
                 canonical="/materiaux"
             />
             <PageLayout className="p-10">

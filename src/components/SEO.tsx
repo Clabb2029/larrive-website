@@ -22,27 +22,77 @@ export default function SEO({ title, description, keywords, canonical }: { title
                 dangerouslySetInnerHTML={{
                     __html: JSON.stringify({
                         "@context": "https://schema.org",
-                        "@type": "LocalBusiness",
-                        "name": "Jean-Claude Larrivé",
-                        "image": "https://www.atelier-larrive.fr/interieur.jpg",
-                        "logo": "https://www.atelier-larrive.fr/logo.png",
-                        "telephone": "06 87 12 53 85",
-                        "address": {
-                            "@type": "PostalAddress",
-                            "streetAddress": "26 rue Haute-Perrière",
-                            "addressLocality": "Auxerre",
-                            "postalCode": "89000",
-                            "addressCountry": "FR"
-                        },
-                        "url": "https://www.atelier-larrive.fr",
-                        "description": "Tapissier décorateur à Auxerre. Réfection de fauteuils, sièges et rideaux d'intérieur.",
-                        "geo": {
-                            "@type": "GeoCoordinates",
-                            "latitude": 47.7924256,
-                            "longitude": 3.5695084
-                        },
-                        "sameAs": [
-                            "https://www.facebook.com/jeanclaude.larrive.16"
+                        "@graph": [
+                            {
+                                "@type": "LocalBusiness",
+                                "name": "Jean-Claude Larrivé",
+                                "alternateName": "Jean Claude Larrivé",
+                                "jobTitle": "Tapissier décorateur, tapissier d'ameublement",
+                                "image": "https://www.atelier-larrive.fr/interieur.jpg",
+                                "logo": "https://www.atelier-larrive.fr/logo.png",
+                                "telephone": "06 87 12 53 85",
+                                "address": {
+                                    "@type": "PostalAddress",
+                                    "streetAddress": "26 rue Haute-Perrière",
+                                    "addressLocality": "Auxerre",
+                                    "postalCode": "89000",
+                                    "addressCountry": "FR"
+                                },
+                                "url": "https://www.atelier-larrive.fr",
+                                "description": "Tapissier décorateur à Auxerre. Réfection de fauteuils, sièges et rideaux d'intérieur.",
+                                "geo": {
+                                    "@type": "GeoCoordinates",
+                                    "latitude": 47.7924256,
+                                    "longitude": 3.5695084
+                                },
+                                "sameAs": [
+                                    "https://www.facebook.com/jeanclaude.larrive.16"
+                                ],
+                                "areaServed": [
+                                    { "@type": "Place", "name": "Auxerre" },
+                                    { "@type": "Place", "name": "Avallon" }
+                                ]
+                            },
+                            {
+                                "@type": "Person",
+                                "name": "Jean-Claude Larrivé",
+                                "alternateName": "Jean Claude Larrivé",
+                                "jobTitle": "Tapissier décorateur, tapissier d'ameublement",
+                                "url": "https://www.atelier-larrive.fr",
+                                "address": {
+                                    "@type": "PostalAddress",
+                                    "streetAddress": "26 rue Haute-Perrière",
+                                    "addressLocality": "Auxerre",
+                                    "postalCode": "89000",
+                                    "addressCountry": "FR"
+                                },
+                                "areaServed": [
+                                    { "@type": "Place", "name": "Auxerre" },
+                                    { "@type": "Place", "name": "Avallon" }
+                                ]
+                            },
+                            {
+                                "@type": "Organization",
+                                "name": "Jean-Claude Larrivé",
+                                "alternateName": "Jean Claude Larrivé",
+                                "url": "https://www.atelier-larrive.fr",
+                                "founder": {
+                                    "@type": "Person",
+                                    "name": "Jean-Claude Larrivé"
+                                },
+                                "address": {
+                                    "@type": "PostalAddress",
+                                    "streetAddress": "26 rue Haute-Perrière",
+                                    "addressLocality": "Auxerre",
+                                    "postalCode": "89000",
+                                    "addressCountry": "FR"
+                                },
+                                "logo": "https://www.atelier-larrive.fr/logo.png",
+                                "areaServed": [
+                                    { "@type": "Place", "name": "Auxerre" },
+                                    { "@type": "Place", "name": "Avallon" }
+                                ]
+                            }
                         ]
                     }),
                 }}

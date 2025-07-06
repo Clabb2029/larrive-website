@@ -26,9 +26,9 @@ export default function Navbar() {
         <div className="sticky top-0 z-50">
             <nav className="relative px-4 py-2 flex justify-between items-center bg-primary text-base-300">
                 <Link href="/">
-                    <Image src="/logo.png" height={30} width={30} alt="Logo du site" className="filter invert brightness-0"/>
+                    <Image src="/logo.png" height={30} width={30} alt="Logo Atelier Jean Claude Larrivé tapissier décorateur à Auxerre" className="filter invert brightness-0" />
                 </Link>
-                <Menu onClick={handleMenuClick} className="md:hidden cursor-pointer hover:text-base-100"/>
+                <Menu onClick={handleMenuClick} className="md:hidden cursor-pointer hover:text-base-100" />
 
                 <div className="hidden md:flex md:ms-auto md:items-end md:w-auto md:space-x-2">
                     {links.map(({ href, label }) => {
@@ -48,9 +48,8 @@ export default function Navbar() {
             </nav>
 
             <div
-                className={`fixed inset-0 z-50 transition-opacity duration-300 ${
-                    menuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
-                }`}
+                className={`fixed inset-0 z-50 transition-opacity duration-300 ${menuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+                    }`}
             >
                 <div
                     className="absolute inset-0 bg-gray-800 opacity-50 transition-opacity duration-300"
@@ -65,9 +64,9 @@ export default function Navbar() {
                 >
                     <div className="flex items-center">
                         <Link href="/" className="mr-auto">
-                            <Image src="/logo.png" height={30} width={30} alt="Logo du site" className="filter invert brightness-0"/>
+                            <Image src="/logo.png" height={30} width={30} alt="Logo Atelier Jean Claude Larrivé tapissier décorateur à Auxerre" className="filter invert brightness-0" />
                         </Link>
-                        <X onClick={() => setMenuOpen(false)} className="cursor-pointer"/>
+                        <X onClick={() => setMenuOpen(false)} className="cursor-pointer" />
                     </div>
                     <div className="flex flex-col mt-10 space-y-8 p-8">
                         {links.map(({ href, label }) => {

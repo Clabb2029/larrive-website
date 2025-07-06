@@ -49,9 +49,9 @@ export default function Contact() {
     return (
         <>
             <SEO
-                title="Contact | Jean-Claude Larrivé - Tapissier décorateur à Auxerre"
-                description="Contactez Jean-Claude Larrivé, tapissier décorateur à Auxerre, pour conseils et devis gratuits en tapisserie d’ameublement. Retrouvez ses coordonnées, formulaire de contact et informations pratiques."
-                keywords="contact tapissier Auxerre, tapissier, décorateur, Auxerre, devis tapisserie gratuit, conseils tapisserie, Jean-Claude Larrivé"
+                title="Contact | Tapissier à Auxerre – Jean-Claude Larrivé (Jean Claude Larrivé)"
+                description="Tapissier décorateur à Auxerre, Jean-Claude Larrivé. Contactez Jean Claude Larrivé, tapissier décorateur à Auxerre, pour conseils et devis gratuits en tapisserie d’ameublement. Retrouvez ses coordonnées, formulaire de contact et informations pratiques."
+                keywords="contact tapissier Auxerre, tapissier, décorateur, Auxerre, devis tapisserie gratuit, conseils tapisserie, Jean-Claude Larrivé, Jean Claude Larrivé"
                 canonical="/contact"
             />
             <PageLayout className="p-10">

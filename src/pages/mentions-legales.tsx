@@ -6,9 +6,9 @@ export default function LegalMentions() {
     return (
         <>
             <SEO
-                title="Mentions légales | Jean-Claude Larrivé - Tapissier décorateur à Auxerre"
-                description="Retrouvez les mentions légales du site Jean-Claude Larrivé, tapissier décorateur à Auxerre : éditeur, hébergeur, contact, protection des données et informations légales obligatoires."
-                keywords="mentions légales, éditeur du site, hébergeur, contact, données personnelles, obligations légales, tapissier Auxerre, Jean-Claude Larrivé, site internet"
+                title="Mentions légales | Tapissier à Auxerre – Jean-Claude Larrivé (Jean Claude Larrivé)"
+                description="Tapissier décorateur à Auxerre, Jean-Claude Larrivé. Retrouvez les mentions légales du site de Jean Claude Larrivé, tapissier décorateur à Auxerre : éditeur, hébergeur, contact, protection des données et informations légales obligatoires."
+                keywords="mentions légales, éditeur du site, hébergeur, contact, données personnelles, obligations légales, tapissier Auxerre, Jean-Claude Larrivé, site internet, Jean Claude Larrivé"
                 canonical="/mentions-legales"
             />
             <PageLayout className="p-10">

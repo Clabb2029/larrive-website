@@ -228,9 +228,9 @@ export default function Realisations() {
     return (
         <>
             <SEO
-                title="Réalisations | Jean-Claude Larrivé - Tapissier décorateur à Auxerre"
-                description="Découvrez les réalisations artisanales de Jean-Claude Larrivé, tapissier décorateur à Auxerre : restauration de fauteuils, création et réparation de canapés, têtes de lit sur mesure, banquettes et stores d’intérieur pour sublimer votre décoration."
-                keywords="réalisations, tapissier Auxerre, fauteuils retapissés, têtes de lit, canapés, stores sur mesure, décoration intérieure, installation, tapissier, décorateur, Auxerre, Jean-Claude Larrivé"
+                title="Réalisations | Tapissier à Auxerre – Jean-Claude Larrivé (Jean Claude Larrivé)"
+                description="Tapissier décorateur à Auxerre, Jean-Claude Larrivé. Découvrez les réalisations artisanales de Jean Claude Larrivé, tapissier décorateur à Auxerre : restauration de fauteuils, création et réparation de canapés, têtes de lit sur mesure, banquettes et stores d’intérieur pour sublimer votre décoration."
+                keywords="réalisations, tapissier Auxerre, fauteuils retapissés, têtes de lit, canapés, stores sur mesure, décoration intérieure, installation, tapissier, décorateur, Auxerre, Jean-Claude Larrivé, Jean Claude Larrivé"
                 canonical="/realisations"
             />
             <PageLayout className="p-10">
